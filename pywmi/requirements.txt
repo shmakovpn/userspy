@@ -1,0 +1,11 @@
+pyflakes
+pep8
+pylint
+ipython
+unittest-dataprovider
+sphinx
+sphinx-rtd-theme
+whatprovides
+twine
+codecov
+pytest-cov

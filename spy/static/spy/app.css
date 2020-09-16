@@ -1,0 +1,76 @@
+/*
+ * userspy project spy/static/spy/app.css
+ * Author: shmakovpn <shmakovpn@yandex.ru>
+ * Date: 2020-08-13
+ */
+
+.loader {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    background: url('/static/icons/svg/md-load_win50.svg') 50% 50% no-repeat transparent;
+}
+
+.nav-item-clicked {
+    background-color: #004411;
+}
+
+.content-items {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.content-item {
+    display: none;
+}
+
+#no-active-tasks {
+    display: none;
+}
+
+#no-heartbeat {
+    display: none;
+}
+
+#active-tasks-list table {
+    width: 100%;
+}
+
+#active-tasks-list table td {
+}
+
+th.ip {
+    width: 100px;
+}
+
+th.datetime {
+    width: 100px;
+}
+
+th.status {
+    width: 50px;
+}
+
+th.actions {
+    width: 30px !important;
+}
+
+
+#add-task-desc {
+    width: 400px;
+}
+
+#active-tasks-list table.table thead tr th:last-child::after {
+    display: none;
+}
+
+#active-tasks-list table.table thead tr th:last-child::before {
+    display: none;
+}
+
+body {
+    font-family: monospace;
+}

@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% block shortcut %}
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon">
+        <link rel="icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon">
+    {% endblock %}
+
+    {% block jquery %}
+        <script src="{% static 'jquery/jquery-3.4.1.js' %}"></script>
+        <script src="{% static 'jquery/jquery.ui.touch-punch.js' %}"></script>
+    {% endblock %}
+
+    {% block bootstrap %}
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+        <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+    {% endblock %}
+
+    {% block fontawesome_css %}
+        <link rel="stylesheet" href="{% static 'fontawesome/v5.11.2/css/all.css' %}" />
+    {% endblock %}
+
+    {% block mdbootsrap_css %}
+        <!-- documentation https://datatables.net/manual/tech-notes/3 -->
+        <!--<link rel="stylesheet" href="{% static 'mdbootstrap/css/mdb.min.css' %}">-->
+        <link rel="stylesheet" href="{% static 'mdbootstrap/css/addons/datatables.min.css' %}" />
+    {% endblock %}
+
+    {% block this %}
+    {% endblock %}
+
+    {% block ionicons %}
+        <script type="module" src="{% static 'icons/ionicons.esm.js' %}"></script>
+        <script nomodule="" src="{% static 'icons/ionicons.js' %}"></script>
+    {% endblock %}
+</head>
+<body style="cursor: auto;">
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block mdbootstrap_js %}
+    <!-- documentation https://datatables.net/manual/tech-notes/3 -->
+    <!--<script type="text/javascript" src="{% static 'mdbootstrap/js/mdb.min.js' %}"></script>-->
+    <script src="{% static 'mdbootstrap/js/addons/datatables.min.js' %}"></script>
+{% endblock %}
+
+</body>
+</html>

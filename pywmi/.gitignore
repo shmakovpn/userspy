@@ -1,0 +1,39 @@
+# author: shmakovpn <shmakovpn@yandex.ru>
+# date: 2020-07-31
+
+# IDEs
+.idea/
+
+# python
+*.pyc
+__pychache__/
+*.egg-info/
+.eggs/
+
+# Django
+migrations/
+db.sqlite3
+settings.py
+manage.py
+
+# virtualenv
+venv/
+
+# sphinx
+docs/build/html/
+docs/build/doctrees/
+_build/
+_static/
+_templates/
+
+# codecov
+.coverage
+
+# pytest
+.pytest_cache/
+
+# vim swp
+*.swp
+
+# excluded
+excluded/

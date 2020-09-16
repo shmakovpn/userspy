@@ -1,0 +1,45 @@
+# IDEs
+.idea/
+
+# python
+*.pyc
+__pychache__/
+*.egg-info/
+.eggs/
+
+# Django
+migrations/
+db.sqlite3
+
+# virtualenv
+venv/
+
+# sphinx
+docs/build/html/
+docs/build/doctrees/
+_build/
+_static/
+_templates/
+
+# codecov
+.coverage
+
+# pytest
+.pytest_cache/
+
+# vim swp
+*.swp
+
+# build
+build/
+dist/
+
+# secret data
+secret/
+
+# keytab, crt, pem files
+*.keytab
+*.pem
+*.crt
+ssl/
+keytabs/

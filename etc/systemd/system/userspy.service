@@ -1,0 +1,22 @@
+[Unit]
+Description=Userspy spyd service
+After=httpd.service postgresql.service
+Requires=httpd.service
+AssertPathExists=/var/www/userspy
+
+[Service]
+User=apache
+Group=apache
+WorkingDirectory=/var/www/userspy
+Environment=VIRTUAL_ENV=/var/www/userspy/venv
+Environment=PATH=$VIRTUAL_ENV/bin:$PATH
+ExecStart=/var/www/userspy/venv/bin/python /var/www/userspy/manage.py spyd
+Restart=on-failure
+Type=simple
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
+
+

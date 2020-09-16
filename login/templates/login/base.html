@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}Userspy login base.html{% endblock %}</title>
+
+    {% block shortcut %}
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon">
+        <link rel="icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon">
+    {% endblock %}
+
+    {% block jquery %}
+        <script src="{% static 'jquery/jquery-3.4.1.js' %}"></script>
+        <script src="{% static 'jquery/jquery.ui.touch-punch.js' %}"></script>
+    {% endblock %}
+
+    {% block bootstrap %}
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+        <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+    {% endblock %}
+
+    {% block this %}
+    {% endblock %}
+</head>
+<body style="cursor: auto;">
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

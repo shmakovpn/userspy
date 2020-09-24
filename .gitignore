@@ -34,12 +34,14 @@ _templates/
 build/
 dist/
 
-# secret data
-secret/
-
 # keytab, crt, pem files
 *.keytab
 *.pem
 *.crt
 ssl/
 keytabs/
+
+# secret data
+# all files besides README.md in secret
+secret/*
+!secret/README.md

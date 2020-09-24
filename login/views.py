@@ -15,7 +15,7 @@ from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import LoginForm
 from django_adtools.models import DomainController
-from django_adtools.ad.ad_tools import ad_login, ad_clear_username, ldap_connect, user_dn, dn_groups
+from django_adtools.ad_tools import ad_login, ad_clear_username, ldap_connect, user_dn, dn_groups
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout

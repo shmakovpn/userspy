@@ -46,6 +46,10 @@ th.ip {
     width: 100px;
 }
 
+th.desc {
+    width: auto !important; /* for firefox */
+}
+
 th.datetime {
     width: 100px;
 }
